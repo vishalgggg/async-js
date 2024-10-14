@@ -1,8 +1,8 @@
 function buyBike() {
     return new Promise((resolve) => {
         setTimeout(() => {
-            console.log("Bought Royal Enfield Himalayan");
-            resolve();
+            // console.log();
+            resolve("Bought Royal Enfield Himalayan");
         }, 2000); // 2 seconds delay
     });
 }
@@ -10,8 +10,8 @@ function buyBike() {
 function planTrip() {
     return new Promise((resolve) => {
         setTimeout(() => {
-            console.log("Trip to Ladakh planned");
-            resolve();
+            // console.log();
+            resolve("Trip to Ladakh planned");
         }, 1000); // 1 second delay
     });
 }
@@ -19,8 +19,8 @@ function planTrip() {
 function reachLadakh() {
     return new Promise((resolve) => {
         setTimeout(() => {
-            console.log("Reached Ladakh");
-            resolve();
+            // console.log();
+            resolve("Reached Ladakh");
         }, 1000); // 1 second delay
     });
 }
@@ -28,8 +28,8 @@ function reachLadakh() {
 function visitPangongLake() {
     return new Promise((resolve) => {
         setTimeout(() => {
-            console.log("Visited Pangong Lake");
-            resolve();
+            // console.log();
+            resolve("Visited Pangong Lake");
         }, 500); // 0.5 seconds delay
     });
 }

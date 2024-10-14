@@ -1,8 +1,8 @@
 function boilWater() {
     return new Promise((resolve) => {
         setTimeout(() => {
-            console.log("Water boiled");
-            resolve();
+            // console.log();
+            resolve("Water boiled");
         }, 2000); // 2 seconds delay
     });
 }
@@ -10,8 +10,8 @@ function boilWater() {
 function addCoffeePowder() {
     return new Promise((resolve) => {
         setTimeout(() => {
-            console.log("Added coffee powder");
-            resolve();
+            // console.log();
+            resolve("Added coffee powder");
         }, 500); // 0.5 seconds delay
     });
 }
@@ -19,8 +19,8 @@ function addCoffeePowder() {
 function brewCoffee() {
     return new Promise((resolve) => {
         setTimeout(() => {
-            console.log("Brewed coffee");
-            resolve();
+            // console.log();
+            resolve("Brewed coffee");
         }, 1000); // 1 second delay
     });
 }
@@ -28,8 +28,8 @@ function brewCoffee() {
 function haveCoffee() {
     return new Promise((resolve) => {
         setTimeout(() => {
-            console.log("Enjoying my coffee");
-            resolve();
+            // console.log();
+            resolve("Enjoying my coffee");
         }, 3000); // 3 seconds delay
     });
 }
