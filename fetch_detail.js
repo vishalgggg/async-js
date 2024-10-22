@@ -48,7 +48,7 @@ userItem.appendChild(
 );
 
 const deleteBtn = document.createElement("button");
-deleteBtn.id = userDetails._id;
+// deleteBtn.id = userDetails._id;
 deleteBtn.appendChild(document.createTextNode("Delete"));
 userItem.appendChild(deleteBtn);
 
@@ -59,14 +59,14 @@ userItem.appendChild(editBtn);
 const userList = document.querySelector("ul");
 userList.appendChild(userItem);
 deleteBtn.addEventListener("click", function (event) {
-  console.log(deleteBtn.id);
-  axios.delete(`https://crudcrud.com/api/3d358a353e164510972c99606296e24d/appointmentData/{deleteBtn.id}`);
+  axios.delete(`https://crudcrud.com/api/3d358a353e164510972c99606296e24d/appointmentData/${userDetails._id}`);
   userList.removeChild(event.target.parentElement);
 //   localStorage.removeItem(userDetails.email);
 });
 editBtn.addEventListener("click", function (event) {
   userList.removeChild(event.target.parentElement);
 //   localStorage.removeItem(userDetails.email);
+  axios.delete(`https://crudcrud.com/api/3d358a353e164510972c99606296e24d/appointmentData/${userDetails._id}`);
   document.getElementById("username").value = userDetails.username;
   document.getElementById("email").value = userDetails.email;
   document.getElementById("phone").value = userDetails.phone;
